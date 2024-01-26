@@ -298,7 +298,7 @@ const useStyles = makeStyles((theme) => ({
             read: 1,
             fromMe: true,
             mediaUrl: "",
-            body: `**\n${msg.trim()}`,
+            body: `\n${msg.trim()}`, /* aqui puedes poner un texto */
         };
         try {
             await api.post(`/messages/${id}`, message);
