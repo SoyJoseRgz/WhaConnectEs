@@ -387,7 +387,7 @@ function Chat(props) {
             aria-label="disabled tabs example"
           >
             <Tab label="Chats" />
-            <Tab label="Mensagens" />
+            <Tab label="Mensajes" />
           </Tabs>
         </Grid>
         {tab === 0 && (
@@ -398,7 +398,7 @@ function Chat(props) {
                 color="primary"
                 variant="contained"
               >
-                Novo
+                Nuevo
               </Button>
             </div>
             <ChatList

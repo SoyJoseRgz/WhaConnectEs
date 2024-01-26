@@ -109,7 +109,7 @@ export default function ChatList({
 
   const getItemStyle = (chat) => {
     return {
-      borderLeft: chat.uuid === id ? "6px solid #002d6e" : null,
+      borderLeft: chat.uuid === id ? "6px solid #4682B4" : null, /* Cambiar color de burbujas chat */
       backgroundColor: chat.uuid === id ? "theme.palette.chatlist" : null,
     };
   };
