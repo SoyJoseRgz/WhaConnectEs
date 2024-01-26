@@ -165,7 +165,7 @@ const UpdateTicketService = async ({
             const wbot = await GetTicketWbot(ticket);
             const queue = await Queue.findByPk(queueId);
             const nome = await ShowUserService(ticketData.userId);
-            const msgtxt = "*Te han transferido al departamento de: " + queue?.name + "* Estarás siendo atendido por *" + nome.name + "*\npara ayudarte.";
+            const msgtxt = "Te han transferido al departamento de: " + queue?.name + " Estarás siendo atendido por *" + nome.name + "*\npara ayudarte.";
 
             const queueChangedMessage = await wbot.sendMessage(
               `${ticket.contact.number}@${ticket.isGroup ? "g.us" : "s.whatsapp.net"}`,
