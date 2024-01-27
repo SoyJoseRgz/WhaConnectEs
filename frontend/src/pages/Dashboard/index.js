@@ -192,7 +192,7 @@ const Dashboard = () => {
         <>
           <Grid item xs={12} sm={6} md={4}>
             <TextField
-              label="Data Inicial"
+              label="Fecha Inicial"
               type="date"
               value={dateFrom}
               onChange={(e) => setDateFrom(e.target.value)}
@@ -204,7 +204,7 @@ const Dashboard = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <TextField
-              label="Data Final"
+              label="Fecha Final"
               type="date"
               value={dateTo}
               onChange={(e) => setDateTo(e.target.value)}
@@ -267,10 +267,10 @@ const Dashboard = () => {
                 value={filterType}
                 onChange={(e) => handleChangeFilterType(e.target.value)}
               >
-                <MenuItem value={1}>Filtro por Data</MenuItem>
+                <MenuItem value={1}>Filtro por Fecha</MenuItem>
                 <MenuItem value={2}>Filtro por Período</MenuItem>
               </Select>
-              <FormHelperText>Selecione o período desejado</FormHelperText>
+              <FormHelperText>Selecione el periodo deceado</FormHelperText>
             </FormControl>
           </Grid>
 
@@ -289,7 +289,7 @@ const Dashboard = () => {
           <Grid item xs={12} sm={6} md={4}>
             <CardCounter
               icon={<GroupIcon fontSize="inherit" />}
-              title="Atd. Pendentes"
+              title="A.T. Pendientes"
               value={counters.supportPending}
               loading={loading}
             />
@@ -297,7 +297,7 @@ const Dashboard = () => {
           <Grid item xs={12} sm={6} md={4}>
             <CardCounter
               icon={<GroupIcon fontSize="inherit" />}
-              title="Atd. Acontecendo"
+              title="A.T. En curso"
               value={counters.supportHappening}
               loading={loading}
             />
@@ -305,7 +305,7 @@ const Dashboard = () => {
           <Grid item xs={12} sm={6} md={4}>
             <CardCounter
               icon={<AssignmentIcon fontSize="inherit" />}
-              title="Atd. Realizados"
+              title="A.T. Resueltos"
               value={counters.supportFinished}
               loading={loading}
             />
@@ -313,7 +313,7 @@ const Dashboard = () => {
           <Grid item xs={12} sm={6} md={4}>
             <CardCounter
               icon={<PersonIcon fontSize="inherit" />}
-              title="Leads"
+              title="Posibles clientes"
               value={counters.leads}
               loading={loading}
             />
@@ -321,7 +321,7 @@ const Dashboard = () => {
           <Grid item xs={12} sm={6} md={4}>
             <CardCounter
               icon={<SpeedIcon fontSize="inherit" />}
-              title="T.M. de Atendimento"
+              title="T.P. de Atención"
               value={formatTime(counters.avgSupportTime)}
               loading={loading}
             />
@@ -329,7 +329,7 @@ const Dashboard = () => {
           <Grid item xs={12} sm={6} md={4}>
             <CardCounter
               icon={<SpeedIcon fontSize="inherit" />}
-              title="T.M. de Espera"
+              title="T.P. de Espera"
               value={formatTime(counters.avgWaitTime)}
               loading={loading}
             />
