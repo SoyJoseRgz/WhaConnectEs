@@ -16,8 +16,8 @@ function PaymentDetails(props) {
       </Typography>
       <Typography gutterBottom>Usuários: {users}</Typography>
       <Typography gutterBottom>Whatsapps: {connections}</Typography>
-      <Typography gutterBottom>Cobrança: Mensal</Typography>
-      <Typography gutterBottom>Total: R${price.toLocaleString('pt-br', {minimumFractionDigits: 2})}</Typography>
+      <Typography gutterBottom>Cobro: Mensal</Typography>
+      <Typography gutterBottom>Total: ${price.toLocaleString('pt-br', {minimumFractionDigits: 2})}</Typography>
     </Grid>
   );
 }
