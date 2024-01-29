@@ -210,7 +210,7 @@ export function PlansManagerGrid(props) {
                             <TableCell align="center">{row.users || '-'}</TableCell>
                             <TableCell align="center">{row.connections || '-'}</TableCell>
                             <TableCell align="center">{row.queues || '-'}</TableCell>
-                            <TableCell align="center">{row.value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) || '-'}</TableCell>
+                            <TableCell align="center">{row.value.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' }) || '-'}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
