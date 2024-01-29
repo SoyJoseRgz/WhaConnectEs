@@ -156,19 +156,19 @@ export function PlanManagerForm(props) {
                             <Grid justifyContent="flex-end" spacing={1} container>
                                 <Grid xs={4} md={1} item>
                                     <ButtonWithSpinner className={classes.fullWidth} loading={loading} onClick={() => onCancel()} variant="contained">
-                                        Limpar
+                                        Limpiar
                                     </ButtonWithSpinner>
                                 </Grid>
                                 {record.id !== undefined ? (
                                     <Grid xs={4} md={1} item>
                                         <ButtonWithSpinner className={classes.fullWidth} loading={loading} onClick={() => onDelete(record)} variant="contained" color="secondary">
-                                            Excluir
+                                            Borrar
                                         </ButtonWithSpinner>
                                     </Grid>
                                 ) : null}
                                 <Grid xs={4} md={1} item>
                                     <ButtonWithSpinner className={classes.fullWidth} loading={loading} type="submit" variant="contained" color="primary">
-                                        Salvar
+                                        Guardar
                                     </ButtonWithSpinner>
                                 </Grid>
                             </Grid>
@@ -191,9 +191,9 @@ export function PlansManagerGrid(props) {
                 <TableHead>
                     <TableRow>
                         <TableCell align="center" style={{ width: '1%' }}>#</TableCell>
-                        <TableCell align="left">Nome</TableCell>
-                        <TableCell align="center">Usuários</TableCell>
-                        <TableCell align="center">Conexões</TableCell>
+                        <TableCell align="left">Nombre</TableCell>
+                        <TableCell align="center">Usuarios</TableCell>
+                        <TableCell align="center">Conexiones</TableCell>
                         <TableCell align="center">Filas</TableCell>
                         <TableCell align="center">Valor</TableCell>
                     </TableRow>
