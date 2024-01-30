@@ -294,7 +294,7 @@ const Contacts = () => {
           >
             {i18n.t("contacts.buttons.add")}
           </Button>
-
+        {/* Exportar csv de contactos */}
          <CSVLink style={{ textDecoration:'none'}} separator=";" filename={'Contactos_WhaConnect.csv'} data={contacts.map((contact) => ({ name: contact.name, number: contact.number, email: contact.email }))}>
           <Button	variant="contained" color="primary"> 
           EXPORTAR CONTATOS 
