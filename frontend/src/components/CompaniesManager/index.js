@@ -232,7 +232,7 @@ export function CompanyForm(props) {
               </Grid>
               <Grid xs={12} sm={6} md={2} item>
                 <FormControl margin="dense" variant="outlined" fullWidth>
-                  <InputLabel htmlFor="plan-selection">Plano</InputLabel>
+                  <InputLabel htmlFor="plan-selection">Plan</InputLabel>
                   <Field
                     as={Select}
                     id="plan-selection"
@@ -261,14 +261,14 @@ export function CompanyForm(props) {
                     name="status"
                     margin="dense"
                   >
-                    <MenuItem value={true}>Sim</MenuItem>
-                    <MenuItem value={false}>Não</MenuItem>
+                    <MenuItem value={true}>Si</MenuItem>
+                    <MenuItem value={false}>No</MenuItem>
                   </Field>
                 </FormControl>
               </Grid>
               <Grid xs={12} sm={6} md={2} item>
                 <FormControl margin="dense" variant="outlined" fullWidth>
-                  <InputLabel htmlFor="status-selection">Campanhas</InputLabel>
+                  <InputLabel htmlFor="status-selection">Campañas</InputLabel>
                   <Field
                     as={Select}
                     id="campaigns-selection"
@@ -329,7 +329,7 @@ export function CompanyForm(props) {
                       onClick={() => onCancel()}
                       variant="contained"
                     >
-                      Limpar
+                      Limpiar
                     </ButtonWithSpinner>
                   </Grid>
                   {record.id !== undefined ? (
@@ -343,7 +343,7 @@ export function CompanyForm(props) {
                           variant="contained"
                           color="secondary"
                         >
-                          Excluir
+                          Borrar
                         </ButtonWithSpinner>
                       </Grid>
                       <Grid xs={6} md={2} item>
@@ -367,7 +367,7 @@ export function CompanyForm(props) {
                           variant="contained"
                           color="primary"
                         >
-                          Usuário
+                          Usuarios
                         </ButtonWithSpinner>
                       </Grid>
                     </>
@@ -381,7 +381,7 @@ export function CompanyForm(props) {
                       variant="contained"
                       color="primary"
                     >
-                      Salvar
+                      Guardar
                     </ButtonWithSpinner>
                   </Grid>
                 </Grid>
@@ -451,14 +451,14 @@ export function CompaniesManagerGrid(props) {
             <TableCell align="center" style={{ width: "1%" }}>
               #
             </TableCell>
-            <TableCell align="left">Nome</TableCell>
+            <TableCell align="left">Nombre</TableCell>
             <TableCell align="left">E-mail</TableCell>
-            <TableCell align="left">Telefone</TableCell>
-            <TableCell align="left">Plano</TableCell>
-            <TableCell align="left">Campanhas</TableCell>
-            <TableCell align="left">Status</TableCell>
-            <TableCell align="left">Criada Em</TableCell>
-            <TableCell align="left">Vencimento</TableCell>
+            <TableCell align="left">Telefono</TableCell>
+            <TableCell align="left">Plan</TableCell>
+            <TableCell align="left">Campañas</TableCell>
+            <TableCell align="left">Estatus</TableCell>
+            <TableCell align="left">Creado en</TableCell>
+            <TableCell align="left">Expiracióno</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -518,7 +518,7 @@ export default function CompaniesManager() {
       const companyList = await list();
       setRecords(companyList);
     } catch (e) {
-      toast.error("Não foi possível carregar a lista de registros");
+      toast.error("No se puede cargar la lista de registros");
     }
     setLoading(false);
   };
@@ -533,10 +533,10 @@ export default function CompaniesManager() {
       }
       await loadPlans();
       handleCancel();
-      toast.success("Operação realizada com sucesso!");
+      toast.success("¡Operación realizada con éxito!");
     } catch (e) {
       toast.error(
-        "Não foi possível realizar a operação. Verifique se já existe uma empresa com o mesmo nome ou se os campos foram preenchidos corretamente"
+        "No se pudo realizar la operación. Comprueba si ya existe una empresa con el mismo nombre o si los campos se han rellenado correctamente"
       );
     }
     setLoading(false);
@@ -548,9 +548,9 @@ export default function CompaniesManager() {
       await remove(record.id);
       await loadPlans();
       handleCancel();
-      toast.success("Operação realizada com sucesso!");
+      toast.success("¡Operación realizada con éxito!");
     } catch (e) {
-      toast.error("Não foi possível realizar a operação");
+      toast.error("La operación no se pudo realizar.");
     }
     setLoading(false);
   };
@@ -620,7 +620,7 @@ export default function CompaniesManager() {
         onClose={() => setShowConfirmDialog(false)}
         onConfirm={() => handleDelete()}
       >
-        Deseja realmente excluir esse registro?
+        ¿Realmente deseas eliminar este registro?
       </ConfirmationModal>
     </Paper>
   );
