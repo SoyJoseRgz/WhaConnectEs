@@ -16,7 +16,8 @@ import { i18n } from "../../translate/i18n";
 import Title from "./Title";
 import useTickets from "../../hooks/useTickets";
 
-const Chart = () => {
+// Aqui esta dibujando el dashnoard
+/* const Chart = () => {
 	const theme = useTheme();
 
 	const date = useRef(new Date().toISOString());
@@ -102,6 +103,6 @@ const Chart = () => {
 			</ResponsiveContainer>
 		</React.Fragment>
 	);
-};
+}; */
 
 export default Chart;
