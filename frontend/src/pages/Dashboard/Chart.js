@@ -17,7 +17,7 @@ import Title from "./Title";
 import useTickets from "../../hooks/useTickets";
 
 // Aqui esta dibujando el dashnoard
-/* const Chart = () => {
+const Chart = () => {
 	const theme = useTheme();
 
 	const date = useRef(new Date().toISOString());
@@ -103,6 +103,6 @@ import useTickets from "../../hooks/useTickets";
 			</ResponsiveContainer>
 		</React.Fragment>
 	);
-}; */
+};
 
 export default Chart;
