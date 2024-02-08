@@ -255,7 +255,7 @@ const CampaignsConfig = () => {
                     color="primary"
                     style={{ marginRight: 10 }}
                   >
-                    Fechar
+                    Salir
                   </Button>
                   <Button
                     onClick={addVariable}

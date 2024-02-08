@@ -191,7 +191,7 @@ export default function ContactNotesDialog ({ modalOpen, onClose, ticket }) {
                             </DialogContent>
                             <DialogActions>
                                 <Button onClick={handleClose} color="primary">
-                                    Fechar
+                                    Salir
                                 </Button>
                                 <ButtonWithSpinner loading={loading} color="primary" type="submit" variant="contained" autoFocus>
                                     Salvar

@@ -72,7 +72,7 @@ function AnnouncementDialog({ announcement, open, handleClose }) {
       </DialogContent>
       <DialogActions>
         <Button onClick={() => handleClose()} color="primary" autoFocus>
-          Fechar
+          Salir
         </Button>
       </DialogActions>
     </Dialog>
