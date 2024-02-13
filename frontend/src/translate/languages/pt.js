@@ -321,7 +321,7 @@ const messages = {
           tags: "Tags",
           administration: "Administração",
           users: "Usuários",
-          settings: "Configurações",
+          settings: "Configuracíon",
           helps: "Ajuda",
           messagesAPI: "API",
           schedules: "Agendamentos",
@@ -439,7 +439,7 @@ const messages = {
           whatsapp: "Conexão",
           contactList: "Lista de Contatos",
           status: "Status",
-          scheduledAt: "Agendamento",
+          scheduledAt: "Agenda",
           completedAt: "Concluída",
           confirmation: "Confirmação",
           actions: "Ações",
@@ -463,7 +463,7 @@ const messages = {
             messagePlaceholder: "Conteúdo da mensagem",
             whatsapp: "Conexão",
             status: "Status",
-            scheduledAt: "Agendamento",
+            scheduledAt: "Agenda",
             confirmation: "Confirmação",
             contactList: "Lista de Contato",
           },
@@ -621,7 +621,7 @@ const messages = {
       },
       settings: {
         success: "Configurações salvas com sucesso.",
-        title: "Configurações",
+        title: "Configuración",
         settings: {
           userCreation: {
             name: "Criação de usuário",
@@ -657,7 +657,7 @@ const messages = {
         extraInfo: "Outras informações",
       },
       ticketOptionsMenu: {
-        schedule: "Agendamento",
+        schedule: "Agenda",
         delete: "Deletar",
         transfer: "Transferir",
         registerAppointment: "Observações do Contato",

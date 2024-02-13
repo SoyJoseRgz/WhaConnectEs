@@ -222,7 +222,7 @@ const CampaignReport = () => {
           <Grid xs={12} md={4} item>
             <CardCounter
               icon={<ScheduleIcon fontSize="inherit" />}
-              title="Agendamento"
+              title="Agenda"
               value={datetimeToClient(campaign.scheduledAt)}
               loading={loading}
             />
