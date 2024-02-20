@@ -85,7 +85,7 @@ const SignUp = () => {
 	const initialState = { name: "", email: "", phone: "", password: "", planId: "", };
 
 	const [user] = useState(initialState);
-	const dueDate = moment().add(3, "day").format();
+	const dueDate = moment().add(15, "day").format(); // Modificar dias para la demo
 	const handleSignUp = async values => {
 		Object.assign(values, { recurrence: "MENSAL" });
 		Object.assign(values, { dueDate: dueDate });
@@ -148,7 +148,7 @@ const SignUp = () => {
 										variant="outlined"
 										fullWidth
 										id="name"
-										label="Nome da Empresa"
+										label="Nombre de la empresa"
 									/>
 								</Grid>
 
@@ -173,7 +173,7 @@ const SignUp = () => {
 										variant="outlined"
 										fullWidth
 										id="phone"
-										label="Telefone com (DDD)"
+										label="Numero Celular"
 										name="phone"
 										error={touched.email && Boolean(errors.email)}
 										helperText={touched.email && errors.email}
@@ -204,7 +204,7 @@ const SignUp = () => {
 										variant="outlined"
 										fullWidth
 										id="plan-selection"
-										label="Plano"
+										label="Plan"
 										name="planId"
 										required
 									>
