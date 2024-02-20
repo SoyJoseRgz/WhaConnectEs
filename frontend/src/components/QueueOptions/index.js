@@ -234,7 +234,7 @@ export function QueueOptionStepper({ queueId, options, updateOptions }) {
                 variant="outlined"
                 className={classes.addButton}
               >
-                Adicionar
+                Agregar
               </Button>
             </>
           )}

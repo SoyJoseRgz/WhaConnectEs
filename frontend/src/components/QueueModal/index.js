@@ -333,7 +333,7 @@ const QueueModal = ({ open, onClose, queueId }) => {
               loading={false}
               onSubmit={handleSaveSchedules}
               initialValues={schedules}
-              labelSaveButton="Adicionar"
+              labelSaveButton="Agregar"
             />
           </Paper>
         )}

@@ -217,21 +217,21 @@ const CampaignsConfig = () => {
                 color="primary"
                 style={{ marginRight: 10 }}
               >
-                Adicionar Variável
+                Agregar variable
               </Button>
               <Button
                 onClick={saveSettings}
                 color="primary"
                 variant="contained"
               >
-                Salvar Configurações
+                Guardar Configuración
               </Button>
             </Grid>
             {showVariablesForm && (
               <>
                 <Grid xs={12} md={6} item>
                   <TextField
-                    label="Atalho"
+                    label="Atajo"
                     variant="outlined"
                     value={variable.key}
                     name="key"
@@ -262,7 +262,7 @@ const CampaignsConfig = () => {
                     color="primary"
                     variant="contained"
                   >
-                    Adicionar
+                    Agregar
                   </Button>
                 </Grid>
               </>
@@ -273,8 +273,8 @@ const CampaignsConfig = () => {
                   <TableHead>
                     <TableRow>
                       <TableCell style={{ width: "1%" }}></TableCell>
-                      <TableCell>Atalho</TableCell>
-                      <TableCell>Conteúdo</TableCell>
+                      <TableCell>Atajo</TableCell>
+                      <TableCell>Contenido</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
