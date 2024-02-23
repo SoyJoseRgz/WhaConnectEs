@@ -132,7 +132,7 @@ const Login = () => {
 					>
 						{i18n.t("login.buttons.submit")}
 					</Button>
-					{ <Grid container>
+					{ <Grid container> {/* enlace para registrar cuentas */}
 						<Grid item>
 							<Link
 								href="#"

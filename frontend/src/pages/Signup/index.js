@@ -85,7 +85,7 @@ const SignUp = () => {
 	const initialState = { name: "", email: "", phone: "", password: "", planId: "", };
 
 	const [user] = useState(initialState);
-	const dueDate = moment().add(15, "day").format(); // Modificar dias para la demo
+	const dueDate = moment().add(15, "day").format(); // Cambiar dias para la demo
 	const handleSignUp = async values => {
 		Object.assign(values, { recurrence: "MENSAL" });
 		Object.assign(values, { dueDate: dueDate });
@@ -198,7 +198,7 @@ const SignUp = () => {
 									/>
 								</Grid>
 								<Grid item xs={12}>
-									<InputLabel htmlFor="plan-selection">Plano</InputLabel>
+									<InputLabel htmlFor="plan-selection">Plan</InputLabel>
 									<Field
 										as={Select}
 										variant="outlined"
